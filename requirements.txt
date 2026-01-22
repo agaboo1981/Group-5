@@ -1,8 +1,8 @@
-pandas
-numpy
+pandas<3.0.0
+numpy<2.0.0
 scikit-learn
 matplotlib
 joblib
 streamlit==1.25.0
 imbalanced-learn
-altair==4.2.2
+altair<5
