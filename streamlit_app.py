@@ -5,6 +5,16 @@ import numpy as np
 import matplotlib.pyplot as plt
 import os
 
+# -------------------------
+# Page Configuration
+# -------------------------
+st.set_page_config(
+    page_title="Risk Predictor | Civil Eng Group 5",
+    page_icon="🏗️",
+    layout="wide",
+    initial_sidebar_state="expanded"
+)
+
 # Change the model path to match what you saved
 model_path = "random_forest_risk_model.pkl"
 
@@ -18,15 +28,6 @@ else:
         st.success("Model loaded successfully!")
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
-# -------------------------
-# Page Configuration
-# -------------------------
-st.set_page_config(
-    page_title="Risk Predictor | Civil Eng Group 5",
-    page_icon="🏗️",
-    layout="wide",
-    initial_sidebar_state="expanded"
-)
 
 # -------------------------
 # Custom Styling
