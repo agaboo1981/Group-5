@@ -3,14 +3,21 @@ import pandas as pd
 import joblib
 import numpy as np
 import matplotlib.pyplot as plt
+import os
 
-# Load the trained model
-try:
-    model = joblib.load("logistic_risk_model.pkl")
-except FileNotFoundError:
-    st.error("Model file 'logistic_risk_model.pkl' not found. Please ensure the model is trained and saved.")
-    st.stop()
+# Change the model path to match what you saved
+model_path = "random_forest_risk_model.pkl"
 
+if not os.path.exists(model_path):
+    st.error(f"Model file not found at {model_path}")
+    st.info(f"Current directory: {os.getcwd()}")
+    st.info(f"Files in directory: {os.listdir('.')}")
+else:
+    try:
+        model = joblib.load(model_path)
+        st.success("Model loaded successfully!")
+    except Exception as e:
+        st.error(f"Error loading model: {str(e)}")
 # -------------------------
 # Page Configuration
 # -------------------------
