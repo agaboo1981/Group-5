@@ -16,18 +16,22 @@ st.set_page_config(
 )
 
 # Change the model path to match what you saved
+# ...existing code...
+# Change the model path to match what you saved
 model_path = "random_forest_risk_model.pkl"
 
 if not os.path.exists(model_path):
     st.error(f"Model file not found at {model_path}")
     st.info(f"Current directory: {os.getcwd()}")
     st.info(f"Files in directory: {os.listdir('.')}")
+    st.stop()  # STOP execution here if file is missing
 else:
     try:
         model = joblib.load(model_path)
-        st.success("Model loaded successfully!")
+        # st.success("Model loaded successfully!") # Optional: Comment out to keep UI clean
     except Exception as e:
         st.error(f"Error loading model: {str(e)}")
+        st.stop()  # STOP execution here if loading fails
 
 # -------------------------
 # Custom Styling
