@@ -103,7 +103,7 @@ p, label, li, .stMarkdown {
 # Sidebar
 # -------------------------
 with st.sidebar:
-    st.image("C:\\Users\\gigan\\OneDrive\\Pictures\\group5.png", width=100) # Placeholder construction icon
+    st.image("group5.png", width=100) # Placeholder construction icon
     st.title("Civil Engineering Group 5")
     st.markdown("---")
     st.info(
