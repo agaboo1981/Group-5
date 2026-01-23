@@ -38,13 +38,10 @@ st.markdown("""
 [data-testid="stNumberInput"] button {
     display: none !important;
 }
-
-/* Sidebar Specific Styling */
 section[data-testid="stSidebar"] {
-    background-color: #ffffff; /* Clean white background */
+    background-color: #ffffff;
     border-right: 1px solid #dee2e6;
 }
-/* Force dark text for sidebar elements */
 section[data-testid="stSidebar"] h1, 
 section[data-testid="stSidebar"] h2, 
 section[data-testid="stSidebar"] h3, 
@@ -55,7 +52,6 @@ section[data-testid="stSidebar"] div,
 section[data-testid="stSidebar"] label {
     color: #2c3e50 !important;
 }
-
 [data-testid="stSidebar"] [data-testid="stImage"] img {
     background-color: white;
     padding: 5px;
@@ -64,7 +60,7 @@ section[data-testid="stSidebar"] label {
 }
 .main {
     background-color: #f8f9fa;
-    color: #212529 !important; /* Ensure text is dark on light background */
+    color: #212529 !important;
 }
 .stButton>button {
     width: 100%;
@@ -85,13 +81,12 @@ h1 {
 h2, h3 {
     color: #34495e !important;
 }
-/* Fix for general text visibility if theme defaults are wrong */
 p, label, li, .stMarkdown {
     color: #212529;
 }
 .info-box {
     background-color:#010008;
-    color: white !important; /* Fix invisible text in info box */
+    color: white !important;
     padding: 20px;
     border-radius: 10px;
     border-left: 5px solid #3498db;
