@@ -19,7 +19,7 @@ st.set_page_config(
 # Model Loading (Non-Blocking)
 # -------------------------
 model = None
-model_path = "random_forest_risk_model.pkl"
+model_path = "risk_model.pkl"
 
 try:
     if os.path.exists(model_path):
