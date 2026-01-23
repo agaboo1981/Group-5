@@ -38,10 +38,29 @@ st.markdown("""
 [data-testid="stNumberInput"] button {
     display: none !important;
 }
+
+/* Sidebar Specific Styling */
+section[data-testid="stSidebar"] {
+    background-color: #ffffff; /* Clean white background */
+    border-right: 1px solid #dee2e6;
+}
+/* Force dark text for sidebar elements */
+section[data-testid="stSidebar"] h1, 
+section[data-testid="stSidebar"] h2, 
+section[data-testid="stSidebar"] h3, 
+section[data-testid="stSidebar"] p, 
+section[data-testid="stSidebar"] li, 
+section[data-testid="stSidebar"] span, 
+section[data-testid="stSidebar"] div,
+section[data-testid="stSidebar"] label {
+    color: #2c3e50 !important;
+}
+
 [data-testid="stSidebar"] [data-testid="stImage"] img {
     background-color: white;
     padding: 5px;
     border-radius: 5px;
+    border: 1px solid #dee2e6;
 }
 .main {
     background-color: #f8f9fa;
