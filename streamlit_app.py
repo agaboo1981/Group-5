@@ -45,6 +45,7 @@ st.markdown("""
 }
 .main {
     background-color: #f8f9fa;
+    color: #212529 !important; /* Ensure text is dark on light background */
 }
 .stButton>button {
     width: 100%;
@@ -60,13 +61,18 @@ st.markdown("""
     color: white;
 }
 h1 {
-    color: #2c3e50;
+    color: #2c3e50 !important;
 }
 h2, h3 {
-    color: #34495e;
+    color: #34495e !important;
+}
+/* Fix for general text visibility if theme defaults are wrong */
+p, label, li, .stMarkdown {
+    color: #212529;
 }
 .info-box {
     background-color:#010008;
+    color: white !important; /* Fix invisible text in info box */
     padding: 20px;
     border-radius: 10px;
     border-left: 5px solid #3498db;
