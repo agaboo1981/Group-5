@@ -120,7 +120,7 @@ col1, col2, col3, col4 = st.columns(4)
 with col1:
     project_type = st.selectbox("Project Type", ["Tunnel", "Dam", "Building", "Road"])
 with col2:
-    location = st.selectbox("Location", ["Lagos", "Kano"])
+    location = st.selectbox("Location", ["Lagos", "Kano", "Rivers", "Abuja", "Kaduna"])
 with col3:
     weather = st.selectbox("Weather Condition", ["Sunny", "Cloudy", "Harmattan"])
 with col4:
